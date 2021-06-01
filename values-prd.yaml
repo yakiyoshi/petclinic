@@ -1,5 +1,5 @@
 spring-petclinic:
-  replicas: 1
+  replicas: 3
   image:
     repository: quay.io/yakiyoshi/spring-petclinic
     pullPolicy: Always
@@ -17,8 +17,3 @@ spring-petclinic:
     requests:
       cpu: 100m
       memory: 128Mi
-  mysql:
-    enabled: true
-    url: jdbc:mysql://mysql.petclinic-db-prd.svc.cluster.local:3306/petclinic
-    username: petclinic
-    password: petclinic
