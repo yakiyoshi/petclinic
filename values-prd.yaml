@@ -1,22 +1,19 @@
-replicas: 1
-
-image:
-  repository: quay.io/yakiyoshi/spring-petclinic
-  pullPolicy: Always
-  tag: "2.4.5-rabbit"
-
-service:
-  type: ClusterIP
-  port: 8080
-
-routes:
-  enabled: true
-  # hosts: example.com
-
-resources:
-  limits:
-    cpu: 2000m
-    memory: 1024Mi
-  requests:
-    cpu: 100m
-    memory: 128Mi
+spring-petclinic:
+  replicas: 1
+  image:
+    repository: quay.io/yakiyoshi/spring-petclinic
+    pullPolicy: Always
+    tag: "2.4.5-rabbit"
+  service:
+    type: ClusterIP
+    port: 8080
+  routes:
+    enabled: true
+    # hosts: example.com
+  resources:
+    limits:
+      cpu: 2000m
+      memory: 1024Mi
+    requests:
+      cpu: 100m
+      memory: 128Mi
