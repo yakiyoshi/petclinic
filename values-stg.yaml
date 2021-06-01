@@ -3,7 +3,7 @@ spring-petclinic:
   image:
     repository: quay.io/yakiyoshi/spring-petclinic
     pullPolicy: Always
-    tag: "2.4.5-rabbit"
+    tag: "2.4.5"
   service:
     type: ClusterIP
     port: 8080
